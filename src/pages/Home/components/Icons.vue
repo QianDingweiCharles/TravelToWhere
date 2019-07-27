@@ -91,34 +91,35 @@ export default {
   height: 0;
   padding-bottom: 50%;
 }
-.icon {
-  overflow: hidden;
-  float: left;
-  width: 25%;
-  padding-bottom: 25%;
-  position: relative;
-  .icon-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0.44rem;
-    .icon-img-container {
-      display: block;
-      margin: 0 auto;
-      height: 100%;
+.icons {
+  margin-top: 0.1rem;
+  .icon {
+    overflow: hidden;
+    float: left;
+    width: 25%;
+    padding-bottom: 25%;
+    position: relative;
+    .icon-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0.44rem;
+      .icon-img-container {
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+      }
     }
-  }
-  .icon-img-des {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    color: $darkTextColor;
-    @include ellipsis();
+    .icon-img-des {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+      color: $darkTextColor;
+      @include ellipsis();
+    }
   }
 }
 </style>
-
-
