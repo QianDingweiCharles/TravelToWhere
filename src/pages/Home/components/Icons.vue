@@ -85,6 +85,8 @@ export default {
 
 <style lang="scss" scoped>
 @import '~styles/varibles.scss';
+@import '~styles/mixins.scss';
+
 .icons >>> .swiper-container {
   height: 0;
   padding-bottom: 50%;
@@ -114,9 +116,7 @@ export default {
     bottom: 0;
     text-align: center;
     color: $darkTextColor;
-    overflow: hidden;
-    white-space: nowrap;
-    text-emphasis: ellipsis;
+    @include ellipsis();
   }
 }
 </style>
