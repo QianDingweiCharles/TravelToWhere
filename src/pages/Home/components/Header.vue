@@ -12,5 +12,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss' scoped>
+.header {
+  color: red;
+  .header-left {
+    color: blue;
+  }
+}
 </style>
