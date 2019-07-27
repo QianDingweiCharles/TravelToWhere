@@ -17,43 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data() {
-    return {
-      recommendList: [
-        {
-          id: '001',
-          imgUrl:
-            '//imgs.qunarzz.com/p/tts6/1809/6d/40a4b4eeb5b21402.jpg_r_390x260x90_b0c9f146.jpg',
-          title: '北京-陕西 6天跟团游',
-          desc:
-            '纯玩古都西安丨登华山+看延安+听老腔+壶口瀑布+兵马俑+明城墙+陕西小吃'
-        },
-        {
-          id: '002',
-          imgUrl:
-            '//imgs.qunarzz.com/p/tts6/1809/6d/40a4b4eeb5b21402.jpg_r_390x260x90_b0c9f146.jpg',
-          title: '北京-陕西 6天跟团游',
-          desc:
-            '纯玩古都西安丨登华山+看延安+听老腔+壶口瀑布+兵马俑+明城墙+陕西小吃'
-        },
-        {
-          id: '003',
-          imgUrl:
-            '//imgs.qunarzz.com/p/tts6/1809/6d/40a4b4eeb5b21402.jpg_r_390x260x90_b0c9f146.jpg',
-          title: '北京-陕西 6天跟团游',
-          desc:
-            '纯玩古都西安丨登华山+看延安+听老腔+壶口瀑布+兵马俑+明城墙+陕西小吃'
-        },
-        {
-          id: '004',
-          imgUrl:
-            '//imgs.qunarzz.com/p/tts6/1809/6d/40a4b4eeb5b21402.jpg_r_390x260x90_b0c9f146.jpg',
-          title: '北京-陕西 6天跟团游',
-          desc:
-            '纯玩古都西安丨登华山+看延安+听老腔+壶口瀑布+兵马俑+明城墙+陕西小吃'
-        }
-      ]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>
@@ -83,17 +48,20 @@ export default {
     min-width: 0;
     .item-title {
       line-height: 0.54rem;
+      text-align: left;
       font-size: 0.32rem;
       @include ellipsis();
     }
     .item-desc {
       line-height: 0.4rem;
       color: #ccc;
+      text-align: left;
       @include ellipsis();
     }
     .item-button {
       line-height: 0.44rem;
       margin-top: 0.16rem;
+      float: left;
       background-color: #ff9300;
       padding: 0 0.2rem;
       border-radius: 0.06rem;
