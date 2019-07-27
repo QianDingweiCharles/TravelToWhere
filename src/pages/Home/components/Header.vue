@@ -21,9 +21,10 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+@import '../../../assets/styles/varibles.scss';
 .header {
   display: flex;
-  background-color: #00bcd4;
+  background-color: $bgColor;
   line-height: 0.86rem;
   color: #fff;
   .header-left {
