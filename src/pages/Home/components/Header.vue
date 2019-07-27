@@ -1,8 +1,8 @@
 <template>
   <div class="header">
-    <div class="header-left">header-left</div>
-    <div class="header-input">header-input</div>
-    <div class="header-right">header-right</div>
+    <div class="header-left">返回</div>
+    <div class="header-input">输入城市/游玩/景点/主题</div>
+    <div class="header-right">城市</div>
   </div>
 </template>
 
@@ -14,9 +14,27 @@ export default {
 
 <style lang='scss' scoped>
 .header {
-  color: red;
+  display: flex;
+  background-color: #00bcd4;
+  line-height: 0.86rem;
   .header-left {
-    color: blue;
+    width: 0.64rem;
+    float: left;
+  }
+  .header-input {
+    flex: 1;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    margin-left: 0.2rem;
+    margin-top: 0.12rem;
+    background-color: #fff;
+    border-radius: 0.1rem;
+    color: #ccc;
+  }
+  .header-right {
+    width: 1.24rem;
+    float: right;
+    text-align: center;
   }
 }
 </style>

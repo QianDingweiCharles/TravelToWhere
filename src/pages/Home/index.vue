@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div>Home</div>
     <home-header></home-header>
   </div>
 </template>
