@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import '../../../assets/styles/varibles.scss';
+@import '~styles/varibles.scss';
 .header {
   display: flex;
   background-color: $bgColor;
