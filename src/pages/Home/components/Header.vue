@@ -24,6 +24,7 @@ export default {
 
 <style lang='scss' scoped>
 @import '~styles/varibles.scss';
+@import '~styles/mixins.scss';
 .header {
   display: flex;
   background-color: $bgColor;
@@ -58,6 +59,7 @@ export default {
       font-size: 0.24rem;
       margin-left: -0.04rem;
     }
+    @include ellipsis();
   }
 }
 </style>
