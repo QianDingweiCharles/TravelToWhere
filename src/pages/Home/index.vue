@@ -29,6 +29,7 @@ export default {
   data() {
     return {
       lastCity: '',
+      bannerImg: '',
       swiperList: [],
       icons: [],
       recommendList: [],

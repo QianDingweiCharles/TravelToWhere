@@ -1,18 +1,16 @@
 <template>
   <div>
     <div class="banner" @click="handleBannerClick">
-      <img
-        class="banner-img"
-        src="https://img1.qunarzz.com/p/tts2/1709/67/c4d1f2d39db1ba02.jpg_r_640x420x90_421dab79.jpg"
-      />
+      <img class="banner-img" :src="bannerImg" />
       <div class="banner-info">
-        <div class="banner-title">数量有限【世界梦号】广州-日本冲绳【世界梦号】广州-</div>
+        <div class="banner-title">{{this.sightName}}</div>
         <div class="banner-number">
-          <span class="iconfont banner-icon">&#xe692;</span>39
+          <span class="iconfont banner-icon">&#xe692;</span>
+          {{this.gallaryImgs.length}}
         </div>
       </div>
     </div>
-    <common-gallary :imgs="imgs" v-show="showGallary" @close="handleGallyClose"></common-gallary>
+    <common-gallary :imgs="gallaryImgs" v-show="showGallary" @close="handleGallyClose"></common-gallary>
   </div>
 </template>
 
@@ -20,15 +18,16 @@
 import CommonGallary from 'common/Gallary'
 export default {
   name: 'DetailBanner',
+  props: {
+    sightName: String,
+    bannerImg: String,
+    gallaryImgs: Array
+  },
   components: {
     CommonGallary
   },
   data() {
     return {
-      imgs: [
-        'https://img1.qunarzz.com/vs_ceph_vs_tts/39258f77-81cf-4ab9-beb6-98a5576c343f.jpg_r_1280x840x90_b41d0e62.jpg',
-        'https://img1.qunarzz.com/vs_ceph_vs_tts/ffa11eab-f050-4ad6-b61e-e28b3b1acf6d.jpg_r_1280x840x90_364b10df.jpg'
-      ],
       showGallary: false
     }
   },
